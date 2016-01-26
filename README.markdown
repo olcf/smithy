@@ -1,6 +1,7 @@
 Smithy
 ======
 
+
 This repo is for the Smithy application itself. For formulas see
 [smithy_formulas](https://github.com/AnthonyDiGirolamo/smithy_formulas)
 
