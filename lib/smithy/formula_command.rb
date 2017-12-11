@@ -113,7 +113,7 @@ module Smithy
       formula_constant_name = "#{formula_name.underscore.camelize}Formula"
 
       if version.present?
-        version_concern = "Version" + version.gsub(/\./, "_")
+        version_concern = "Version" + version.gsub(/[.-]/, "_")
         if formula_constant_name.constantize.const_defined?(version_concern)
           formula_constant_name.constantize.class_eval "include #{version_concern}"
         end
